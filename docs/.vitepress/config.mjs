@@ -5,7 +5,6 @@ const config = {
   lang: 'zh-CN',
   title: "My Blog",
   description: "A personal blog",
-
   cleanUrls: true,
   srcDir: './src',
 
@@ -15,10 +14,13 @@ const config = {
 
 
   themeConfig: {
+    logo: '/logo.png',
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Articles', link: '/articles' },
+      { text: '主页', link: '/' },
+      { text: '项目', link: '/projects' },
+      { text: '文章', link: '/articles' },
+      { text: '笔记', link: '/notes' },
+      { text: '其他', link: '/others' },
     ],
 
     sidebar: {
@@ -26,11 +28,18 @@ const config = {
       '/articles/': generateSidebar('src/articles', '/articles/')
     },
 
+    // 禁用所有文章底部的上一篇文章和下一篇文章链接
+    docFooter: {
+      prev: false,
+      next: false
+    },
+
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/2710165659/my-blog' }
     ]
   },
 
+  // 允许使用 Markdown 中的数学公式
   markdown: {
     math: true
   }
