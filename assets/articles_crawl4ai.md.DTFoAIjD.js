@@ -184,6 +184,4 @@ import{_ as i,c as a,o as n,ag as h}from"./chunks/framework.S-Qvb3wi.js";const k
 <span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">        &quot;白熊/希洛库玛/望月宝（シロクマ，声：凉屋スイ）&quot;</span></span>
 <span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">      ]</span></span>
 <span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">    }</span></span>
-<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;&quot;&quot;</span></span>
-<span class="line"></span>
-<span class="line"><span style="--shiki-light:#B31D28;--shiki-light-font-style:italic;--shiki-dark:#FDAEB7;--shiki-dark-font-style:italic;">\`\`\`python</span></span></code></pre></div></details>`,29)]))}const o=i(p,[["render",t]]);export{y as __pageData,o as default};
+<span class="line"><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;&quot;&quot;</span></span></code></pre></div></details>`,29)]))}const o=i(p,[["render",t]]);export{y as __pageData,o as default};
