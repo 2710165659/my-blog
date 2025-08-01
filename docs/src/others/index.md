@@ -28,7 +28,7 @@ import ArticleCard from '../components/MyCard.vue'
       link="/vitepress-tutorial"
       title="vitepree教程"
       desc="从github搬运过来的"
-      img="/others/vitepress-tutorial-0.png"
+      img="/vitepress-tutorial-0.png"
     />
   </div>
 </div>
