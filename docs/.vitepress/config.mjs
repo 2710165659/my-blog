@@ -4,7 +4,7 @@ import generateSidebar from './generateSidebar.js'
 const config = {
   lang: 'zh-CN',
   title: "My Blog",
-  description: "A personal blog",
+  description: "xuan_yuan's blog",
   cleanUrls: true,
   srcDir: './src',
 
@@ -24,8 +24,14 @@ const config = {
     ],
 
     sidebar: {
-      '/tutorial/': generateSidebar('src/tutorial', '/tutorial/'),
-      '/articles/': generateSidebar('src/articles', '/articles/')
+      '/projects/': generateSidebar('src/projects', '/projects/'),
+      '/articles/': generateSidebar('src/articles', '/articles/'),
+      '/notes/': generateSidebar('src/notes', '/notes/'),
+      '/others/': generateSidebar('src/others', '/others/'),
+      '/vitepress-tutorial': generateSidebar('src/vitepress-tutorial', '/vitepress-tutorial'),
+    },
+    search: {
+      provider: 'local'
     },
 
     // 禁用所有文章底部的上一篇文章和下一篇文章链接

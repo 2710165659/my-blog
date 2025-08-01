@@ -20,20 +20,34 @@ export default function generateSidebar(dir, basePath) {
       return a.name.localeCompare(b.name)
     })
 
-  const sidebarItems = filteredSortedEntries.map(e => {
+  const sidebarItems = []
+
+  // 处理 index.md 或 README.md 置顶
+  const indexEntry = filteredSortedEntries.find(e =>
+    !e.isDirectory() && (e.name === 'index.md' || e.name === 'README.md')
+  )
+  if (indexEntry) {
+    sidebarItems.push({
+      text: '主页',
+      link: path.posix.join(basePath, ''),
+    })
+  }
+
+  // 处理其他项
+  filteredSortedEntries.forEach(e => {
     if (e.isDirectory()) {
-      return {
+      sidebarItems.push({
         text: e.name,
         collapsed: true,
         items: generateSidebar(path.join(dir, e.name), path.posix.join(basePath, e.name, '/'))
-      }
-    } else {
+      })
+    } else if (e.name !== 'index.md' && e.name !== 'README.md') {
       const name = e.name.replace(/\.md$/, '')
-      const link = path.posix.join(basePath, name === 'README' ? '' : name)
-      return {
+      const link = path.posix.join(basePath, name)
+      sidebarItems.push({
         text: name,
         link
-      }
+      })
     }
   })
 

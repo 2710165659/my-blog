@@ -2,22 +2,22 @@
 layout: home
 
 hero:
-  name: "个人博客"
+  name: "xuan_yuan's blog"
   # text: "个人博客"
-  tagline: 先写个框架，别的啥也没做
+  tagline: 一个平平无奇的小博客
   actions:
     - theme: brand
-      text: vitepress教程
-      link: /tutorial
+      text: Articles
+      link: /articles
     - theme: alt
-      text: 测试文章
+      text: Projects
       link: /articles/test
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Articels
+    details: 写的一些文章，随笔等。
+  - title: Projects
+    details: 个人开发的一些小项目
+  - title: Notes
+    details: 整理的学习笔记
 ---

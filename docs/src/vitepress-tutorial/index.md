@@ -1,10 +1,14 @@
 ---
-outline:deep
+outline: deep
 ---
 
 # VitePress 教程中心
 
 欢迎来到 VitePress 教程中心，这里包含完整的指南和参考文档。
+
+:::tip
+原文链接：[https://vitepress.dev/zh/](https://vitepress.dev/zh/)
+:::
 
 ## 入门指南
 
