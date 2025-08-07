@@ -1,14 +1,15 @@
 ---
 layout: page
+sidebar: false
 ---
 
 <script setup lang="ts">
-import ArticleCard from '../components/MyCard.vue'
+import MyCard from '../components/MyCard.vue'
 </script>
 
 <style scoped>
 .page-container {
-  max-width: 1200px;
+  max-width: 90vw;
   margin: 0 auto;
   padding: 0 32px;
 }
@@ -24,7 +25,7 @@ import ArticleCard from '../components/MyCard.vue'
 
 <div class="page-container">
   <div class="articles-list">
-    <ArticleCard
+    <MyCard
       link="/vitepress-tutorial"
       title="vitepree教程"
       desc="从github搬运过来的"
