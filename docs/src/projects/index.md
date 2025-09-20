@@ -38,7 +38,7 @@ import MyCard from '../components/MyCard.vue'
       img="/RougeKiller-0.png"
     />
     <MyCard
-      link="/projects/osutool"
+      link="/projects/MFCGames"
       title="一些mfc小游戏"
       desc="mfc(c++)"
       img="/MFCGames-0.png"

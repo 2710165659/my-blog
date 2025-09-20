@@ -58,7 +58,7 @@ import { ElTimeline, ElTimelineItem, ElCard } from 'element-plus'
         </el-timeline-item>
         <el-timeline-item timestamp="2025.02-至今(大三下-实习)" placement="top" color="#F56C6C">
           <el-card class="timeline-card">
-            东软公司实习，进一步学习Sql<a href="Sql" class="note">笔记</a>和Java基础，并做了一些别的玩意，如: <a href="projects/osutool">这个</a>
+            东软公司实习，进一步学习Sql<a href="Sql" class="note">笔记</a>和Java基础，并做了一些别的玩意，如: <a href="https://github.com/2710165659/OsuTool" target="_blank">这个</a>
           </el-card>
         </el-timeline-item>
       </el-timeline>
@@ -77,7 +77,7 @@ import { ElTimeline, ElTimelineItem, ElCard } from 'element-plus'
         算法学习路线: <a href="https://oi.wiki/" target="_blank" >oi wiki</a><br>
         算法刷题: <a href="https://www.luogu.com.cn/" target="_blank" >洛谷</a><br>
         <hr>
-        gitbrach: <a href="https://learngitbranching.js.org/?locale=zh_CN" target="_blank" >git-branch</a><br>
+        git-branch: <a href="https://learngitbranching.js.org/?locale=zh_CN" target="_blank" >git-branch</a><br>
       </div>
     </div>
   </div>
