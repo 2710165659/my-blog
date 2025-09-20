@@ -31,6 +31,18 @@ import MyCard from '../components/MyCard.vue'
       desc="vue3+cloudflare worker"
       img="/osutool-0.png"
     />
+    <MyCard
+      link="/projects/RougeKiller"
+      title="简历上的项目"
+      desc="浏览器扩展+前后端+爬虫"
+      img="/RougeKiller-0.png"
+    />
+    <MyCard
+      link="/projects/osutool"
+      title="一些mfc小游戏"
+      desc="mfc(c++)"
+      img="/MFCGames-0.png"
+    />
   </div>
 </div>
 

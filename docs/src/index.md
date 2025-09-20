@@ -7,11 +7,11 @@ hero:
   tagline: 一个平平无奇的小博客
   actions:
     - theme: brand
-      text: Articles
+      text: 文章
       link: /articles
     - theme: alt
-      text: Projects
-      link: /articles/test
+      text: 笔记
+      link: /notes
 
 features:
   - title: Articels
