@@ -25,7 +25,7 @@
 
 ## 截图预览
 
-![主页界面](/osutool-0.png)
+![主页界面](/images/osutool-0.png)
 
 ---
 

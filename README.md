@@ -10,8 +10,8 @@
 ## TODO（未来规划）
 
 - [√] 初步搭建框架
-- [ ] 丰富内容
-- [ ] 美化页面
+- [o] 丰富内容
+- [o] 美化页面
 - [ ] 鼓捣点小玩意
 - [ ] 增加 RSS 订阅功能
 - [ ] 持续更新技术文章与笔记
@@ -19,6 +19,10 @@
 ## 如何启动
 
 ```sh
+# 安装依赖
 npm install
-npm run docs:dev
+# 本地运行 npm run docs:dev or npm run dev
+npm run dev
+# 构建 
+npm run docs:build
 ```
