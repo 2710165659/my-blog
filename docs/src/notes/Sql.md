@@ -222,7 +222,7 @@ psql -U username -c "ALTER DATABASE database_name OWNER TO new_owner;"
 
 ### 基本语法
 
-```mysql
+```sql
 CREATE TABLE table_name (
     column1 datatype [constraints],
     column2 datatype [constraints],
@@ -275,7 +275,7 @@ YEAR         -- 年份
 
 ### 列约束
 
-```mysql
+```sql
 -- 基本约束
 name VARCHAR(50) NOT NULL                       -- NOT NULL：非空约束
 age INT DEFAULT 18                              -- DEFAULT：默认值
@@ -554,7 +554,7 @@ HAVING AVG(salary) > 6000;
 
 ## 3. JOIN连接查询
 
-```mysql
+```sql
 -- FROM employees e 表别名，省略as
 
 -- INNER JOIN（内连接） 只返回两个表中都有匹配记录的数据    默认join就是inner join
@@ -586,7 +586,7 @@ LEFT JOIN employees e2 ON e1.manager_id = e2.employee_id;
 
 ## 4. 子查询
 
-```mysql
+```sql
 -- 按子查询，例(SELECT AVG(salary) FROM employees) 返回值分类
 
 -- 标量子查询：子查询返回单个值
@@ -638,7 +638,7 @@ WHERE EXISTS (
 
 ## 5. UNION、CASE
 
-```mysql
+```sql
 -- UNION（去重） 合并两个查询结果集、自动去除重复的记录、结果按默认顺序排序（除非指定ORDER BY）
 SELECT first_name FROM employees
 UNION
@@ -661,7 +661,7 @@ FROM employees;
 
 ## 6. 复杂查询示例
 
-```mysql
+```sql
 -- 查询2020年以后入职的员工中，统计各部门员工数量、平均工资和最高工资，筛选出员工数超过5人的部门，按平均工资降序排列显示前10个部门
 SELECT 
     d.department_name,
@@ -782,7 +782,7 @@ where STU_ID in (
 
 ### 创建语法
 
-```mysql
+```sql
 -- 创建表时定义
 CREATE TABLE users (
     id INT PRIMARY KEY,
@@ -839,7 +839,7 @@ WHERE name LIKE 'John%'   -- ✅
 
 ### 性能监控
 
-```mysql
+```sql
 -- 查看执行计划
 EXPLAIN SELECT * FROM users WHERE name = 'John';
 
@@ -981,7 +981,7 @@ FROM employees;
 
 #### 窗口聚合函数
 
-```mysql
+```sql
 -- 累计求和
 SELECT name, salary,
        SUM(salary) OVER (ORDER BY salary ROWS UNBOUNDED PRECEDING) as cum_sum
@@ -995,7 +995,7 @@ FROM daily_sales;
 
 ### 4. 转换函数
 
-```mysql
+```sql
 -- 显式类型转换
 SELECT CAST('123' AS INTEGER);          -- 字符串转整数
 SELECT CONVERT(INT, '123');             -- SQL Server转换
@@ -1008,7 +1008,7 @@ SELECT TO_DATE('2023-12-25', 'YYYY-MM-DD') FROM DUAL;  -- Oracle转换
 
 ### 5. 系统函数
 
-```mysql
+```sql
 -- 获取当前系统时间
 SELECT GETDATE() AS CurrentTime;
 SELECT SYSDATE FROM DUAL; -- Oracle
@@ -1173,7 +1173,7 @@ DELIMITER ;
 
 #### 示例
 
-```mysql
+```sql
 DELIMITER $$
 
 CREATE FUNCTION get_user_topN_total(p_user_id INT, p_limit INT)
@@ -1250,7 +1250,7 @@ DELIMITER ;
 
 ### 基本操作语法
 
-```mysql
+```sql
 -- 创建视图
 CREATE VIEW view_name AS SELECT 查询语句;
 
@@ -1286,7 +1286,7 @@ DROP VIEW view_name;
 
 ### 基本操作语法
 
-```mysql
+```sql
 -- 声明游标
 DECLARE cursor_name CURSOR FOR SELECT 查询语句;
 
@@ -1343,7 +1343,7 @@ DELIMITER ;
 
 ### 示例
 
-```mysql
+```sql
 DELIMITER //
 CREATE PROCEDURE GetProductDetails (IN ProductID INT)
 BEGIN
@@ -1377,7 +1377,7 @@ CALL GetProductDetails(5);
 
 ### 触发器的基本结构
 
-```mysql
+```sql
 DELIMITER //
 CREATE TRIGGER trg_CheckProductPrice
 BEFORE INSERT ON Products
@@ -1449,7 +1449,7 @@ ROLLBACK TO SAVEPOINT my_savepoint;
 
 ### 事务管理示例
 
-```mysql
+```sql
 -- 假设存在一个名为 'accounts' 的表，包含 'account_id' 和 'balance' 字段
 
 -- 1. 开始一个新事务
@@ -1520,7 +1520,7 @@ END IF;
 3. **表级别**：特定数据表的默认字符集。
 4. **列级别**：特定列的字符集，这是最细粒度的设置。
 
-```mysql
+```sql
 -- 创建一个使用UTF-8字符集的数据库
 CREATE DATABASE mydatabase CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -1567,7 +1567,7 @@ SQL 权限管理是数据库安全的核心组成部分，它决定了哪些用�
 
 #### 3. 授予 (GRANT) 和 撤销 (REVOKE)
 
-```mysql
+```sql
 -- 授予用户 'john_doe' 对 'employees' 表的 SELECT 权限
 GRANT SELECT ON employees TO john_doe;
 -- 授予角色 'data_analyst' 对 'sales' 数据库中所有表的 SELECT 和 INSERT 权限

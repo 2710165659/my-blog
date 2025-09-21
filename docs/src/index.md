@@ -21,7 +21,7 @@ features:
 <div class="ku-kuru-img-container">
   <el-image
     class="ku-kuru-img"
-    src="/images/くくる.png"
+    src="./images/くくる.png"
     alt="くくる"
     fit="contain"
     lazy>

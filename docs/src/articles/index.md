@@ -28,7 +28,7 @@ import ArticleCard from '../components/MyCard.vue'
       link="/articles/crawl4ai"
       title="crawl4ai：异步爬虫"
       desc="支持css选择器、js预处理，适合AI处理和数据提取。"
-      img="/images/crawl4ai-0.png"
+      img="../images/crawl4ai-0.png"
     />
   </div>
 </div>

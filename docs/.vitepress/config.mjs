@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 import generateSidebar from './generateSidebar.js'
 
 const config = {
+  base: '/',
   lang: 'zh-CN',
   title: "My Blog",
   description: "xuan_yuan's blog",
