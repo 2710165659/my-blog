@@ -5,6 +5,7 @@ sidebar: false
 
 <script setup lang="ts">
 import MyCard from '../components/MyCard.vue'
+import vitepressTutorialImg from '../images/vitepress-tutorial-0.png'
 </script>
 
 <style scoped>
@@ -29,7 +30,7 @@ import MyCard from '../components/MyCard.vue'
       link="/vitepress-tutorial"
       title="vitepree教程"
       desc="从github搬运过来的"
-      img="../images/vitepress-tutorial-0.png"
+      :img="vitepressTutorialImg"
     />
   </div>
 </div>

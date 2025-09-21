@@ -21,7 +21,7 @@ features:
 <div class="ku-kuru-img-container">
   <el-image
     class="ku-kuru-img"
-    src="./images/くくる.png"
+    :src="kukuru"
     alt="くくる"
     fit="contain"
     lazy>
@@ -29,7 +29,7 @@ features:
 </div>
 
 <script setup>
-
+import kukuru from './images/くくる.png'
 </script>
 
 <style scoped>
