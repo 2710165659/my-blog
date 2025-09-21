@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "xuan_yuan's blog"
   # text: "个人博客"
-  tagline: 一个平平无奇的小博客
+  tagline: 个人博客，随缘更新。
   actions:
     - theme: brand
       text: 文章
@@ -14,10 +14,52 @@ hero:
       link: /notes
 
 features:
-  - title: Articels
-    details: 写的一些文章，随笔等。
-  - title: Projects
-    details: 个人开发的一些小项目
-  - title: Notes
-    details: 整理的学习笔记
+  - title: Tip
+    details: 记录学习/生活。整理笔记...
 ---
+
+<div class="ku-kuru-img-container">
+  <el-image
+    class="ku-kuru-img"
+    src="/images/くくる.png"
+    alt="くくる"
+    fit="contain"
+    lazy>
+  </el-image>
+</div>
+
+<script setup>
+
+</script>
+
+<style scoped>
+  .ku-kuru-img-container{ 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 50;
+    text-align: right;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .ku-kuru-img{
+    display: inline-block;
+    height: 70vh;  
+    width: auto;
+    max-width: 100%; 
+  }
+
+  @media screen and (max-width: 767px){
+    .ku-kuru-img-container{
+      text-align: center;
+    }
+    .ku-kuru-img{
+      height: auto; 
+      width: 100%;
+      display: inline-block;
+      margin: 0 auto; 
+    }
+  }
+</style>

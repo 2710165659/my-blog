@@ -29,7 +29,7 @@ import MyCard from '../components/MyCard.vue'
       link="/vitepress-tutorial"
       title="vitepree教程"
       desc="从github搬运过来的"
-      img="/vitepress-tutorial-0.png"
+      img="/images/vitepress-tutorial-0.png"
     />
   </div>
 </div>
