@@ -54,6 +54,7 @@ import kukuru from './images/くくる.png'
   @media screen and (max-width: 767px){
     .ku-kuru-img-container{
       text-align: center;
+      position: static;
     }
     .ku-kuru-img{
       height: auto; 

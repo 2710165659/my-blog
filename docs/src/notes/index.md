@@ -35,19 +35,17 @@ import { ElTimeline, ElTimelineItem, ElCard } from 'element-plus'
         </el-timeline-item>
         <el-timeline-item timestamp="2024.01-2024.02(大二上寒假)" placement="top" color="#E6A23C">
           <el-card class="timeline-card">
-            学习算法<a href="算法" class="note">笔记</a>，打比赛(蓝桥杯国三)，比赛后学习前端三件套(笔记写在了网页里，网页文件丢失)
+            算法刷题<a href="算法" class="note">笔记</a>
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="2024.03-2024.06(大二下)" placement="top" color="#909399">
           <el-card class="timeline-card">
-            继续学习前端，完善算法知识，准备暑期实习
+            继续算法刷题，直到蓝桥杯比赛(国三)，后学习前端
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="2024.07-2024.08(大二下暑假)" placement="top" color="#409EFF">
           <el-card class="timeline-card">
-            突击高教杯数学建模大赛，获奖省三
-            学习Java基础<a href="java基础知识" class="note">笔记</a>+框架(ssm)<a href="java框架学习" class="note">笔记</a>,
-            学习Vue<a href="Vue" class="note">笔记</a>
+            突击高教杯数学建模大赛，获奖省三，学习Java基础<a href="java基础知识" class="note">笔记</a>+框架(ssm)<a href="java框架学习" class="note">笔记</a>，学习Vue<a href="Vue" class="note">笔记</a>
           </el-card>
         </el-timeline-item>
         <el-timeline-item timestamp="2024.09-2025.01(大三上)" placement="top" color="#67C23A">
@@ -171,6 +169,89 @@ a.note:hover {
 }
 ::v-deep(.el-timeline-item__node) {
   box-shadow: 0 0 0 4px #fff, 0 2px 8px #0002;
+}
+
+/* ========== Responsive: 移动端样式 ========== */
+/* 平板和小屏：竖向排布，侧边栏放到底部 */
+@media (max-width: 900px) {
+  .timeline-flex {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .timeline-wrapper {
+    order: 1;
+    max-width: 100%;
+    padding: 0 8px;
+    margin-right: 0;
+  }
+  .timeline-sidebar {
+    order: 2;
+    width: 100%;
+    min-width: unset;
+    padding: 12px;
+    margin-left: 0;
+    background: #ffffff;
+    box-shadow: 0 1px 8px #0001;
+  }
+  .timeline-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 0 8px;
+  }
+  .note-tip span {
+    font-size: 14px;
+  }
+  .timeline-card {
+    min-width: unset;
+    width: 100%;
+    box-shadow: 0 1px 8px #0001;
+  }
+  a.note {
+    padding: 6px 8px;
+    display: inline-block;
+  }
+  .sidebar-content {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .sidebar-content a {
+    display: inline-block;
+    padding: 6px 0;
+  }
+  ::v-deep(.el-timeline-item__node) {
+    transform: scale(0.9);
+  }
+}
+
+/* 超小屏：进一步压缩字体与间距 */
+@media (max-width: 480px) {
+  .main-container {
+    padding: 12px 8px;
+  }
+  .timeline-title {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  .note-tip {
+    margin-bottom: 16px;
+  }
+  .note-tip span {
+    font-size: 13px;
+  }
+  .timeline-card {
+    min-height: 56px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .sidebar-title {
+    font-size: 16px;
+  }
+  .sidebar-content {
+    font-size: 13px;
+  }
+  ::v-deep(.el-timeline-item__content) {
+    font-size: 14px;
+  }
 }
 </style>
 
