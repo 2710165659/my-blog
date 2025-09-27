@@ -53,8 +53,10 @@ Java 里的“语法糖”（syntactic sugar）指的是语言设计上为简化
 | 枚举支持 switch                 | `switch (enumVal) { case ...: }`         | 底层通过映射实现                                |
 | 钻石语法 (泛型类型推断)         | `List<String> list = new ArrayList<>();` | 省略泛型右侧具体类型参数                        |
 | 接口默认方法                    | `default void method() { ... }`          | 接口中带有默认实现，避免全部实现                |
-| # 日期                          |                                          |                                                 |
-| ## 1. `java.util.Date` (老 API) |                                          |                                                 |
+
+# 日期
+
+## 1. `java.util.Date` (老 API)
 
 - **来源**：Java 1.0 引入。
 - **特点**：
